@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop page</title>
+    <!-- animate.css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+   <!-- Link Swiper's CSS -->
+   <link
+   rel="stylesheet"
+   href="https://unpkg.com/swiper/swiper-bundle.min.css"
+ />
+ <!-- slick slider -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- coustrom css -->
+    <link rel="stylesheet" href="assets/css/shop.css">
+</head>
+<body>
+    <header class="d-none d-lg-block">
+        <div class="container ">
+            <ul class="menu">
+                <li class="email"><a href="tel:email"><i class="fas fa-envelope"></i>hello@colorlib.com
+                </a> 
+                </li>
+                <li class="free flex-grow-1"> Free Shipping for all Order of $99</li>
+                <li class="social-icon">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </li>
+                <li class="flag"><img src="assets/img/flag.png" alt=""> English <i class="fas fa-chevron-down"></i>
+                    <ul class="country ">
+                        <li><a href="#">Spanis</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </li>
+                <li class="login">
+                    <a href="#">
+                        <i class="fas fa-user"></i> Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+<nav>
+    <div class="container">
+        <div class="row header-nav">
+            <div class="col-lg-3 d-flex align-items-center justify-content-between">
+                <img src="assets/img/download.webp"  alt="LOGO" >
+                <li id="toggle" onclick="on()"><span class="bars"></span></li>
+            </div>
+            <div class="col-lg-6 nav ">
+                    <ul>
+                        <li><a href="#" >home</a></li>
+                        <li><a href="#" class="active">shop</a></li>
+                        <li class="pages"><a href="#">pages</a>
+                          <ul>
+                            <li><a href="#">Shop Details</a></li>
+                            <li><a href="">Shoping Card</a></li>
+                            <li><a href="">Chack Out </a></li>
+                            <li><a href="">Blog Details</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                
+            </div>
+            <div class="col-lg-3 header-icon d-flex justify-content-center justify-content-lg-end">
+                <li><i class="fas fa-heart"></i><span>1</span></li>
+                <li><i class="fas fa-shopping-bag"></i><span>3</span></li>
+                <li class="d-flex"> item: <p> $150.00</p></li>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<aside class="aside">
+
+<ul class="menu">
+  <li class="logo"><a href="#"><img src="assets/img/download.webp"  alt="LOGO" ></a></li>
+  <li class="email"><a href="tel:email"><i class="fas fa-envelope"></i>hello@colorlib.com
+  </a> 
+  </li>
+  <li class="free "> Free Shipping for all Order of $99</li>
+  <li class="social-icon">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+  </li>
+  <div class="login-flag">
+    <div class="flag">
+      <img src="assets/img/flag.png" alt=""> English <i class="fas fa-chevron-down"></i>
+      <ul class="country ">
+        <li><a href="#">Spanis</a></li>
+        <li><a href="#">English</a></li>
+    </ul>
+    </div>
+    <li class="login">
+      <a href="#">
+          <i class="fas fa-user"></i> Login
+      </a>
+  </li>
+  </div>
+   <div class="aside-menu-area">
+     <ul class="toggle-area">   <li>menu</li>
+       <li class="toggle"><span class="bars"></span></li>
+     </ul>
+     <ul class="manu-wraper">
+        <li><a href="#">home</a></li>
+        <li><a href="#">shop</a></li>
+      <li> <label for="page">pages <i class="fas fa-caret-down"></i></label> 
+      <ul>
+          <li><a href="#">Shop Details</a></li>
+          <li><a href="">Shoping Card</a></li>
+          <li><a href="">Chack Out </a></li>
+          <li><a href="">Blog Details</a></li>
+      </ul>
+      </li>
+      <li><a href="#">blog</a></li>
+      <li><a href="#">contact</a></li>
+      </ul>
+    </div>
+
+
+  <div class=" header-icon">
+    <li><i class="fas fa-heart"></i><span>1</span></li>
+    <li><i class="fas fa-shopping-bag"></i><span>3</span></li>
+    <li class="d-flex"> item: <p> $150.00</p></li>
+</div> 
+</ul>
+</aside>
+<div id="overlay" onclick="off()">
+</div>
+
+<!-- scarch area third section start -->
+<section class="search">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 ">
+        <div class="alldeparmeant">
+          <button type="button" > <i class="fas fa-bars"></i>  All departments <i class="fas fa-angle-down"></i></button>
+          <ul class=" allitem" >
+            <li><a href="#">Fresh Meat</a></li>
+            <li><a href="#">Vegetables</a></li>
+            <li><a href="#">Fruit & Nut Gifts</a></li>
+            <li><a href="#"> Fresh Berries</a></li>
+            <li><a href="#">  Ocean Foods</a></li>
+            <li><a href="#">Butter & Eggs</a></li>
+            <li><a href="#">Fastfood</a></li>
+            <li><a href="#">Fresh Onion</a></li>
+            <li><a href="#"> Papayaya & Crisps</a></li>
+            <li><a href="#">Oatmeal</a></li>
+            <li><a href="#">Fresh Bananas</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-12 mt-5 mt-lg-0">
+        <div class="row">
+          <div class="col-md-9">
+            <form action="" class="d-flex search-form">
+              <div class="formTxt ">All Categories<i class="fas fa-angle-down"></i></div>
+              <input type="text" placeholder="What do you need?">
+              <input type="submit" value="search" name="" id="">
+            </form>
+          </div>
+        
+        <div class="col-md-3  phoneIcon mt-5 mt-md-0 align-items-start justify-content-md-end">
+          <span><i class="fas fa-phone-alt"></i></span>
+          <div class="number">
+            <h4>+65 11.188.888</h4>
+              <p>support 24/7 time</p>
+          </div>
+        </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- scarch area third section end -->
+
+<!-- page banner section start -->
+
+<section class="pageName">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 bgImg">
+                <h1>Organi Shop
+                    </h1>
+                    <a href="./index.html">Home </a>
+                    <span>Shop</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- page banner section end -->
+
+<!-- sale off section start -->
+<section class="sale-off">
+    <div class="container">
+       <div class="row">
+        <div class="col-lg-3">
+            <h1>Department</h1>
+            <ul class=" allitem" >
+                <li><a href="#">Fresh Meat</a></li>
+                <li><a href="#">Vegetables</a></li>
+                <li><a href="#">Fruit & Nut Gifts</a></li>
+                <li><a href="#"> Fresh Berries</a></li>
+                <li><a href="#">  Ocean Foods</a></li>
+                <li><a href="#">Butter & Eggs</a></li>
+                <li><a href="#">Fastfood</a></li>
+                <li><a href="#">Fresh Onion</a></li>
+                <li><a href="#"> Papayaya & Crisps</a></li>
+                <li><a href="#">Oatmeal</a></li>
+                <li><a href="#">Fresh Bananas</a></li>
+              </ul>
+              <div class="range-are">
+                  <h3>price</h3>
+                <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                    <input type="range" id="a" value="500"> +
+                    <input type="number" id="b" value="100"> =
+                    <output name="result" for="a b"></output>
+                </form>
+              </div>
+        </div>
+        <div class="col-lg-9 slider-area">
+            <h1>Sale Off</h1>
+            <div class="sliderArea">
+                <div class="filterItem img1 ">
+                    <div class="off">-20%</div>
+                    <div class="itemtxt">
+                        <h4>Dried Fruit</h4>
+                      <h3>Vegetables package</h3>
+                        <span>$30.00</span>
+                        <samp>$36.00</samp>
+                    </div>
+                      <div class="filter-icon">
+                      <a href="#"><i class="fas fa-heart"></i></a>  
+                      <a href="#"><i class="fas fa-retweet"></i></a>  
+                      <a href="#"><i class="fas fa-shopping-cart"></i></i></a>  
+                      </div>
+                  </div>
+                <div class="filterItem img2 ">
+                    <div class="off">-20%</div>
+                    <div class="itemtxt">
+                        <h4>Dried Fruit</h4>
+                      <h3>Vegetables package</h3>
+                        <span>$30.00</span>
+                        <samp>$36.00</samp>
+                    </div>
+                      <div class="filter-icon">
+                      <a href="#"><i class="fas fa-heart"></i></a>  
+                      <a href="#"><i class="fas fa-retweet"></i></a>  
+                      <a href="#"><i class="fas fa-shopping-cart"></i></i></a>  
+                      </div>
+                  </div>
+                <div class="filterItem img3 ">
+                    <div class="off">-20%</div>
+                    <div class="itemtxt">
+                        <h4>Dried Fruit</h4>
+                      <h3>Vegetables package</h3>
+                        <span>$30.00</span>
+                        <samp>$36.00</samp>
+                    </div>
+                      <div class="filter-icon">
+                      <a href="#"><i class="fas fa-heart"></i></a>  
+                      <a href="#"><i class="fas fa-retweet"></i></a>  
+                      <a href="#"><i class="fas fa-shopping-cart"></i></i></a>  
+                      </div>
+                  </div>
+                <div class="filterItem img4 ">
+                    <div class="off">-20%</div>
+                    <div class="itemtxt">
+                        <h4>Dried Fruit</h4>
+                      <h3>Vegetables package</h3>
+                        <span>$30.00</span>
+                        <samp>$36.00</samp>
+                    </div>
+                      <div class="filter-icon">
+                      <a href="#"><i class="fas fa-heart"></i></a>  
+                      <a href="#"><i class="fas fa-retweet"></i></a>  
+                      <a href="#"><i class="fas fa-shopping-cart"></i></i></a>  
+                      </div>
+                  </div>
+                <div class="filterItem img5 ">
+                    <div class="off">-20%</div>
+                    <div class="itemtxt">
+                        <h4>Dried Fruit</h4>
+                      <h3>Vegetables package</h3>
+                        <span>$30.00</span>
+                        <samp>$36.00</samp>
+                    </div>
+                      <div class="filter-icon">
+                      <a href="#"><i class="fas fa-heart"></i></a>  
+                      <a href="#"><i class="fas fa-retweet"></i></a>  
+                      <a href="#"><i class="fas fa-shopping-cart"></i></i></a>  
+                      </div>
+                  </div>
+                <div class="filterItem img6 ">
+                    <div class="off">-20%</div>
+                    <div class="itemtxt">
+                        <h4>Dried Fruit</h4>
+                      <h3>Vegetables package</h3>
+                        <span>$30.00</span>
+                        <samp>$36.00</samp>
+                    </div>
+                      <div class="filter-icon">
+                      <a href="#"><i class="fas fa-heart"></i></a>  
+                      <a href="#"><i class="fas fa-retweet"></i></a>  
+                      <a href="#"><i class="fas fa-shopping-cart"></i></i></a>  
+                      </div>
+                  </div>
+            </div>
+        </div>
+       </div>
+    </div>
+</section>
+<!-- sale off section end -->
+
+<!-- footer area start -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 footer-first-col pb-5 pb-md-4">
+        <img src="assets/img/download.webp" alt="">
+        <p>Address: 60-49 Road 11378 New York</p>
+        <p> Phone: +65 11.188.888</p>
+        <p>Email: hello@colorlib.com</p>
+      </div>
+      <div class="col-md-4 footer-second-col pb-5 pb-md-4">
+        <h4>Useful Links</h4>
+        <div class="usefulLink">
+          <li><a href="#"> About Us</a></li>
+          <li><a href="#">About Our Shop</a></li>
+          <li><a href="#">Secure Shopping</a></li>
+          <li><a href="#">Delivery infomation</a></li>
+          <li><a href="#"> Privacy Policy</a></li>
+          <li><a href="#">Our Sitemap</a></li>
+          <li><a href="#">Who We Are</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Innovation</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </div>
+      </div>
+      <div class="col-md-4 footer-third-col">
+        <h2>Join Our Newsletter Now</h2>
+        <p>Get E-mail updates about our latest shop and special offers.</p>
+        <form action="">
+          
+            <input type="text" placeholder="Enter Your mail">
+            <button type="submit" class="footer-btn">subscribe</button>
+          
+        </form>
+        <li class="social-icon">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+      </li>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer area end -->
+<div class="Colorlib">
+  <div class="container">
+    <div class="contain d-flex align-items-center justify-content-between">
+      <h1>Copyright ©2022 All rights reserved | This template is made with  ❤ by <a href="#">Colorlib</a></h1>
+      <img src="assets/img/xpayment-item.png.pagespeed.ic.IsCge16PaL.png" alt="">
+    </div>
+  </div>
+</div>
+
+<!-- jQuary cdn -->
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+ <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- slick slider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <!-- main javascript -->
+ <script src="assets/js/shop.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+ $('.sliderArea').slick({
+  dots: true,   
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+//  $('.sliderArea').slick({
+//   dots: true,
+//   infinite: true,
+//   speed: 300,
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   autoplaySpeed: 2000,
+// //   prevArrow:'<span class="next_arow"><i class="fas fa-chevron-left"></i></span>',
+// //   nextArrow:'<span class="prev_arow"><i class="fas fa-chevron-right"></i></span>',
+//   sliderArea: [
+//     {
+//       breakpoint: 1024,
+//       settings: {
+//         slidesToShow: 3,
+//         slidesToScroll: 1,
+//         infinite: true,
+//       }
+//     },
+//     {
+//       breakpoint: 767,
+//       settings: {
+//         slidesToShow: 2,
+//         slidesToScroll: 1
+//       }
+//     },
+//     {
+//       breakpoint: 600,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1
+//       }
+//     }
+//     // You can unslick at a given breakpoint now by adding:
+//     // settings: "unslick"
+//     // instead of a settings object
+//   ]
+// });
+    </script>
+</body>
+</html>
+
