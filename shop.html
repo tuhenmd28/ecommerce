@@ -228,11 +228,16 @@
               </ul>
               <div class="range-are">
                   <h3>price</h3>
-                <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
-                    <input type="range" id="a" value="500"> +
-                    <input type="number" id="b" value="100"> =
-                    <output name="result" for="a b"></output>
-                </form>
+                  <div class="input-container">
+                    <div class="slider-track"></div>
+                    <input type="range"  id="slider-1" min="10" max="540" value="10" oninput="sliderOne()">
+                    <input type="range" name="" id="slider-2" min="10" max="540" value="540" oninput="sliderTwo()">
+                </div>
+                <div class="values">
+                  $<input type="text" id="range1">
+                  <span>&dash;</span>
+                  $<span id="range2">100</span>
+              </div>
               </div>
         </div>
         <div class="col-lg-9 slider-area">
@@ -398,50 +403,51 @@
  <script src="assets/js/shop.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
- $('.sliderArea').slick({
-  dots: true,   
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-});
 //  $('.sliderArea').slick({
-//   dots: true,
-//   infinite: true,
-//   speed: 300,
+//   dots: true,   
 //   slidesToShow: 3,
 //   slidesToScroll: 1,
+//   autoplay: true,
 //   autoplaySpeed: 2000,
-// //   prevArrow:'<span class="next_arow"><i class="fas fa-chevron-left"></i></span>',
-// //   nextArrow:'<span class="prev_arow"><i class="fas fa-chevron-right"></i></span>',
-//   sliderArea: [
-//     {
-//       breakpoint: 1024,
-//       settings: {
-//         slidesToShow: 3,
-//         slidesToScroll: 1,
-//         infinite: true,
-//       }
-//     },
-//     {
-//       breakpoint: 767,
-//       settings: {
-//         slidesToShow: 2,
-//         slidesToScroll: 1
-//       }
-//     },
-//     {
-//       breakpoint: 600,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//       }
-//     }
-//     // You can unslick at a given breakpoint now by adding:
-//     // settings: "unslick"
-//     // instead of a settings object
-//   ]
-// });
+//});
+ $('.sliderArea').slick({
+  dots: true,
+  infinite: true,
+  speed: 700,
+  autoplay:true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplaySpeed: 2000,
+//   prevArrow:'<span class="next_arow"><i class="fas fa-chevron-left"></i></span>',
+//   nextArrow:'<span class="prev_arow"><i class="fas fa-chevron-right"></i></span>',
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
     </script>
 </body>
 </html>

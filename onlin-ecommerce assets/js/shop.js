@@ -1,3 +1,44 @@
+window.onload = function() {
+  sliderOne();
+  sliderTwo();
+}
+
+
+
+
+let sliderone = document.getElementById('slider-1');
+let slidertwo = document.getElementById('slider-2');
+let displayValOne = document.getElementById('range1');
+let displayValTwo = document.getElementById('range2');
+let minGap = 0 ;
+let sliderTrack = document.querySelector(".slider-track")
+let sliderMaxValue = document.getElementById("slider-1").max;
+function sliderOne(){
+  if(parseInt(slidertwo.value) - parseInt(sliderone.value) <= minGap){
+      sliderone.value = parseInt(slidertwo.value) - minGap;
+  }
+  displayValOne.value = sliderone.value;
+  fillcolor();
+}
+
+function sliderTwo(){
+  if(parseInt(slidertwo.value) - parseInt(sliderone.value) <= minGap){
+      slidertwo.value = parseInt(sliderone.value) + minGap;
+  }
+  displayValTwo.value = slidertwo.value;
+  fillcolor();
+}
+function fillcolor(){
+  percent1 = (sliderone.value/ sliderMaxValue) * 100;
+  percent2 = (slidertwo.value/ sliderMaxValue) * 100;
+  sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}%,#DD2222 ${percent1}%,#DD2222 ${percent2}%,#dadae5 ${percent2}%)`;
+}
+
+
+
+
+
+
 
 //   itemIlist area js
     var acc = document.querySelector(".alldeparmeant button");
