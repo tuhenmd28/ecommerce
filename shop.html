@@ -236,7 +236,7 @@
                 <div class="values">
                   $<input type="text" id="range1">
                   <span>&dash;</span>
-                  $<span id="range2">100</span>
+                  $<input type="text" id="range2">
               </div>
               </div>
         </div>
@@ -328,11 +328,113 @@
                       </div>
                   </div>
             </div>
+            <hr>
         </div>
        </div>
     </div>
 </section>
 <!-- sale off section end -->
+
+<!-- color section area start -->
+<section class="color">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <h4>Colors</h4>
+        <div class="color-input">
+          <label for="white">White<input type="radio" id="white"></label>
+          <label for="white">Gray<input type="radio" id="white"></label>
+          <label for="white">Red<input type="radio" id="white"></label>
+          <label for="white">Black<input type="radio" id="white"></label>
+          <label for="white">Blue<input type="radio" id="white"></label>
+          <label for="white">Green<input type="radio" id="white"></label>
+        </div>
+        <h4 class="mt-5 pt-3">Popular Size</h4>
+        <div class="popular-size">
+          <li>
+            <button type="button">Large</button>
+          </li>
+          <li>
+
+            <button type="button">Medium</button>
+          </li>
+          <li>
+
+            <button type="button">Small</button>
+          </li>
+          <li>
+
+            <button type="button">Tiny</button>
+          </li>
+        </div>
+        <h4 class="mb-0 mt-5 pt-5">Latest Product</h4>
+        <div class="first-slider">
+          <div class="slider_item">
+            <div class="row mt-5 pt-4">
+              <div class="col-4"><img src="assets/img/xlp-1.jpg.pagespeed.ic.dQgcajStX5.webp" class="w-100 img-fluid" alt=""></div>
+              <div class="col-8"><h3>Crab Pool Security</h3>
+                <span>$30.00</span></div>
+            </div>
+            <div class="row my-4">
+              <div class="col-4"><img src="assets/img/xlp-2.jpg.pagespeed.ic.NOJHmb0hZw.webp" class="w-100 img-fluid" alt=""></div>
+              <div class="col-8"><h3>Crab Pool Security</h3>
+                <span>$30.00</span></div>
+            </div>
+            <div class="row">
+              <div class="col-4"><img src="assets/img/xlp-3.jpg.pagespeed.ic.eEz5Jo7-Qa.webp" class="w-100 img-fluid" alt=""></div>
+              <div class="col-8"><h3>Crab Pool Security</h3>
+                <span>$30.00</span></div>
+            </div>
+          </div>
+          <div class="slider_item">
+            <div class="row mt-5 pt-4">
+              <div class="col-4"><img src="assets/img/xlp-1.jpg.pagespeed.ic.dQgcajStX5.webp" class="w-100 img-fluid" alt=""></div>
+              <div class="col-8"><h3>Crab Pool Security</h3>
+                <span>$30.00</span></div>
+            </div>
+            <div class="row my-4">
+              <div class="col-4"><img src="assets/img/xlp-2.jpg.pagespeed.ic.NOJHmb0hZw.webp" class="w-100 img-fluid" alt=""></div>
+              <div class="col-8"><h3>Crab Pool Security</h3>
+                <span>$30.00</span></div>
+            </div>
+            <div class="row">
+              <div class="col-4"><img src="assets/img/xlp-3.jpg.pagespeed.ic.eEz5Jo7-Qa.webp" class="w-100 img-fluid" alt=""></div>
+              <div class="col-8"><h3>Crab Pool Security</h3>
+                <span>$30.00</span></div>
+            </div>
+          </div>
+          <div class="slider_item">
+            <div class="row mt-5 pt-4">
+              <div class="col-4"><img src="assets/img/xlp-1.jpg.pagespeed.ic.dQgcajStX5.webp" class="w-100 img-fluid" alt=""></div>
+              <div class="col-8"><h3>Crab Pool Security</h3>
+                <span>$30.00</span></div>
+            </div>
+            <div class="row my-4">
+              <div class="col-4"><img src="assets/img/xlp-2.jpg.pagespeed.ic.NOJHmb0hZw.webp" class="w-100 img-fluid" alt=""></div>
+              <div class="col-8"><h3>Crab Pool Security</h3>
+                <span>$30.00</span></div>
+            </div>
+            <div class="row">
+              <div class="col-4"><img src="assets/img/xlp-3.jpg.pagespeed.ic.eEz5Jo7-Qa.webp" class="w-100 img-fluid" alt=""></div>
+              <div class="col-8"><h3>Crab Pool Security</h3>
+                <span>$30.00</span></div>
+            </div>
+          </div>
+       
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="itemHead">
+          <div><span>Sort By </span> <select >
+            <option value="1">default</option>
+            <option value="2">default</option>
+          </select></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- color section area end -->
 
 <!-- footer area start -->
 <footer>
@@ -448,6 +550,15 @@
     // instead of a settings object
   ]
 });
+$('.first-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 700,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow:'<span class="next_arow"><i class="fas fa-chevron-left"></i></span>',
+        nextArrow:'<span class="prev_arow"><i class="fas fa-chevron-right"></i></span>',
+      });
     </script>
 </body>
 </html>
