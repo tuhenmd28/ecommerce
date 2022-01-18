@@ -672,12 +672,49 @@
  <script src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
-        
+  $('.responsive').slick({
+  infinite: true,
+  speed: 1000,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+   prevArrow:'<span class="next_arow"><i class="fas fa-chevron-left"></i></span>',
+   nextArrow:'<span class="prev_arow"><i class="fas fa-chevron-right"></i></span>',
+   responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
 
 	
        $('.first-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+        speed: 700,
         autoplay: true,
         autoplaySpeed: 2000,
         prevArrow:'<span class="next_arow"><i class="fas fa-chevron-left"></i></span>',
@@ -687,6 +724,7 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
+        speed: 700,
         autoplaySpeed: 2000,
         prevArrow:'<span class="next_arow"><i class="fas fa-chevron-left"></i></span>',
         nextArrow:'<span class="prev_arow"><i class="fas fa-chevron-right"></i></span>',
@@ -695,6 +733,7 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
+        speed: 700,
         autoplaySpeed: 2000,
         prevArrow:'<span class="next_arow"><i class="fas fa-chevron-left"></i></span>',
         nextArrow:'<span class="prev_arow"><i class="fas fa-chevron-right"></i></span>',
