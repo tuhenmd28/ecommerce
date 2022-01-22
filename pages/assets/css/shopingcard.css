@@ -626,9 +626,10 @@ header .menu .login i {
 }
 
 .header-nav .nav ul .pages:hover > ul {
-  top: 100%;
+  top: 90%;
   opacity: 1;
   visibility: visible;
+  z-index: 111;
 }
 
 .header-nav .nav ul .pages:hover > ul::after {
@@ -878,11 +879,12 @@ header .menu .login i {
 
 .pageName {
   background: url(../img/breadcrumb.jpg) center no-repeat;
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   text-align: center;
   color: #FFFFFF;
-  padding: 4rem 0;
-  margin: 3rem 0;
+  padding: 5rem 0;
+  margin: 1rem 0;
 }
 
 .pageName .bgImg h1 {
@@ -901,7 +903,7 @@ header .menu .login i {
   font-family: "Cairo", sans-serif;
   color: #FFFFFF;
   display: inline-block;
-  margin-right: 2rem;
+  margin-right: 3rem;
   position: relative;
 }
 
@@ -910,13 +912,12 @@ header .menu .login i {
   display: inline-block;
   position: absolute;
   top: 50%;
-  right: -14px;
+  right: -40%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 1.3rem;
   height: 1px;
   background: #FFFFFF;
-  opacity: 1;
 }
 
 .pageName .bgImg span {
@@ -927,195 +928,170 @@ header .menu .login i {
   opacity: .8;
 }
 
-.vegetable {
+.price {
   padding: 5rem 0;
 }
 
-.vegetable .img-show-area {
-  background: #F4F5FE;
-}
-
-.vegetable .img-show-area img {
-  width: 100%;
-  height: auto;
-}
-
-.vegetable .slider span.next_arow.slick-arrow, .vegetable .slider span.prev_arow.slick-arrow {
-  display: none !important;
-}
-
-.vegetable .slider a {
-  width: 125px;
-  margin: 1rem;
-}
-
-.vegetable .slider a img {
-  width: 100%;
-}
-
-.vegetable .right-col {
-  padding-left: 3rem;
-}
-
-.vegetable .right-col h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  font-family: "Cairo", sans-serif;
-}
-
-.vegetable .right-col .star {
-  color: #EDBB0E;
-  font-size: 1.7rem;
-}
-
-.vegetable .right-col .star span {
-  color: #E86D28;
-}
-
-.vegetable .right-col h3 {
-  margin: 2rem 0;
-  font-size: 3rem;
-  color: #dd2222;
-}
-
-.vegetable .right-col p {
-  color: #6f6f6f;
-  font-size: 1.7rem;
-  line-height: 2.5rem;
-  font-family: "Cairo", sans-serif;
-  margin-bottom: 2rem;
-}
-
-.vegetable .right-col .addToCard {
+.price .loding-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 6rem 0;
-}
-
-.vegetable .right-col .addToCard .incDecri {
-  background: #F5F5F5;
-  display: inline-block;
-}
-
-.vegetable .right-col .addToCard .incDecri .remove {
-  font-size: 1.6rem;
-  color: #6f6f6f;
-  cursor: pointer;
-  display: inline-block;
-}
-
-.vegetable .right-col .addToCard .incDecri #number {
-  font-size: 1.6rem;
-  color: #6f6f6f;
-  display: inline-block;
-}
-
-.vegetable .right-col .addToCard .incDecri .add {
-  font-size: 1.6rem;
-  color: #6f6f6f;
-  cursor: pointer;
-  display: inline-block;
-}
-
-.vegetable .right-col .addToCard a {
-  background: #7FAD39;
-  border-radius: 0;
-  border: 1px solid #7FAD39;
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-family: "Cairo", sans-serif;
-  font-weight: 900;
-  letter-spacing: 2px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  margin: 0 2rem;
-}
-
-.vegetable .right-col .addToCard a:hover {
-  background: transparent;
-  color: #7FAD39;
-}
-
-.vegetable .right-col .addToCard i {
-  font-size: 1.6rem;
-  background: #F5F5F5;
-  color: #6f6f6f;
-  padding: 1.3rem 1.7rem;
-  cursor: pointer;
-}
-
-.vegetable table {
-  margin-top: 4rem;
-}
-
-.vegetable table th {
-  width: 40%;
-  font-size: 1.6rem;
-  font-family: "Cairo", sans-serif;
-  font-weight: 700;
-  padding: .5rem 0;
-}
-
-.vegetable table td {
-  padding: .5rem 0;
-  font-weight: 400;
-  display: block;
-  font-size: 1.6rem;
-}
-
-.vegetable table td samp {
-  color: red;
-}
-
-.vegetable table td:last-child a {
-  font-size: 1.5rem;
-  padding-right: 2.3rem;
-  color: #6f6f6f;
-  display: inline-block;
-}
-
-.description .filterMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.description .filterMenu .active {
-  color: #000 !important;
+.price .loding-area a {
+  background: #f5f5f5;
+  color: #6F6F6F;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+  font-family: "Cairo", sans-serif;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  text-decoration: none;
 }
 
-.description .filterMenu .filterLI {
-  text-decoration: none;
+.price table {
+  width: 100%;
+}
+
+.price table .hrline td {
+  padding: 1rem 0 2rem 0;
+}
+
+.price table .hrline td hr {
+  border-bottom: 1px solid #857575;
+}
+
+.price table tr {
+  padding-bottom: 1rem !important;
+}
+
+.price table tr .Product-left img {
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+}
+
+.price table tr .Product-left span {
   font-size: 1.8rem;
   font-family: "Cairo", sans-serif;
+  color: #252525;
+}
+
+.price table tr .add-remove {
+  background: #F5F5F5;
+  width: 130px;
+  padding: 1rem 0;
+  margin: auto;
+}
+
+.price table tr .add-remove .remove, .price table tr .add-remove .add, .price table tr .add-remove .count {
+  font-size: 1.4rem;
+  padding: .5rem 1.2rem;
+  background-color: #F5F5F5;
   color: #6F6F6F;
-  font-weight: 700;
-  margin-top: -5px;
 }
 
-.description .filteritem h5 {
-  color: black;
-  font-weight: 700;
-  font-size: 1.7rem;
+.price table tr .add-remove .remove, .price table tr .add-remove .add {
+  cursor: pointer;
+}
+
+.price table tr th {
+  font-size: 2rem;
   font-family: "Cairo", sans-serif;
-  margin-top: 5rem;
+  font-weight: 700;
+  color: #000;
 }
 
-.description .filteritem p {
-  color: #666;
+.price table tr th .fa-times {
+  color: #6F6F6F;
+  cursor: pointer;
+  padding-left: 0.5rem;
+}
+
+.cardTotal {
+  padding: 3rem 0 5rem 0;
+}
+
+.cardTotal h2 {
+  font-weight: 900;
+  font-family: "Cairo", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cardTotal form input[type=text] {
+  padding: 1rem 2rem;
   font-size: 1.6rem;
-  margin-top: 2rem;
+  border: 1px solid #00000031;
+  color: #6F6F6F;
   font-family: "Cairo", sans-serif;
-  line-height: 2.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cardTotal form input[type=submit] {
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  margin-left: 2rem;
+  background: #6F6F6F;
+  border: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.cardTotal .right-total {
+  background: #F5F5F5;
+  padding: 2rem;
+}
+
+.cardTotal .right-total h3 {
+  font-weight: 900;
+  font-family: "Cairo", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cardTotal .right-total ul li {
+  font-weight: 900;
+  font-family: "Cairo", sans-serif;
+  font-size: 1.8rem;
+  padding: 2rem 0;
+  text-transform: capitalize;
+}
+
+.cardTotal .right-total ul li:first-child {
+  border-bottom: 1px solid #6f6f6f49;
+}
+
+.cardTotal .right-total ul li span {
+  float: right;
+  color: red;
+}
+
+.cardTotal .right-total a {
+  width: 100% !important;
+  text-transform: uppercase;
+  background: #7FAD39;
+  text-decoration: none;
+  display: block;
+  padding: .8rem 0;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 2rem 0;
 }
 
 footer {
@@ -1307,12 +1283,6 @@ footer .footer-third-col .social-icon a i:hover {
 }
 
 @media screen and (max-width: 991px) {
-  .vegetable {
-    padding: 2rem 0;
-  }
-  .vegetable .right-col .addToCard {
-    margin: 4rem 0;
-  }
   .alldeparmeant {
     position: relative;
   }
@@ -1350,29 +1320,51 @@ footer .footer-third-col .social-icon a i:hover {
   }
 }
 
-@media screen and (max-width: 868px) {
-  .vegetable .right-col .addToCard a {
-    padding: 1rem 1rem;
-    font-size: 1.4rem;
-    margin: 0 1rem;
+@media screen and (max-width: 767px) {
+  .price {
+    padding: 5rem 0;
   }
-  .description .filteritem h5 {
-    color: black;
-    font-weight: 700;
+  .price table {
+    width: 100%;
+    max-width: 100%;
+  }
+  .price table tr {
+    padding-bottom: 1rem !important;
+  }
+  .price table tr .Product-left img {
+    margin-right: 0rem;
+  }
+  .price table tr .Product-left span {
     font-size: 1.7rem;
     font-family: "Cairo", sans-serif;
-    margin-top: 2rem;
+    color: #252525;
+    display: block;
   }
-}
-
-@media screen and (max-width: 767px) {
-  .vegetable .right-col .addToCard a {
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
-    margin: 0 2rem;
+  .price table tr .add-remove {
+    background: #F5F5F5;
+    width: 100px;
+    padding: 1rem 0;
+    margin: auto;
   }
-  .vegetable {
-    padding: 0 !important;
+  .price table tr .add-remove .remove, .price table tr .add-remove .add, .price table tr .add-remove .count {
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+    background-color: #F5F5F5;
+    color: #6F6F6F;
+  }
+  .price table tr .add-remove .remove, .price table tr .add-remove .add {
+    cursor: pointer;
+  }
+  .price table tr th {
+    font-size: 1.4rem;
+    font-family: "Cairo", sans-serif;
+    font-weight: 700;
+    color: #000;
+  }
+  .price table tr th .fa-times {
+    color: #6F6F6F;
+    cursor: pointer;
+    padding-left: 0.5rem;
   }
   .fruit-img {
     padding-bottom: 7rem !important;
@@ -1389,37 +1381,41 @@ footer .footer-third-col .social-icon a i:hover {
     padding: 3rem 0;
   }
   .Colorlib .contain {
+    display: unset !important;
     text-align: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .Colorlib .contain h1 {
     width: 100%;
     font-size: 1.6rem;
     margin-bottom: 2rem;
   }
-  .Colorlib .contain {
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 1rem;
-  }
   .first-slider {
     position: relative;
   }
   .first-slider .prev_arow {
+    color: white;
+    background: red;
+    font-size: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 50%;
     position: absolute;
     right: 0%;
     top: -32px;
   }
   .first-slider .next_arow {
+    color: white;
+    background: red;
+    font-size: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 50%;
     position: absolute;
     left: 75% !important;
     top: -32px;
@@ -1459,11 +1455,43 @@ footer .footer-third-col .social-icon a i:hover {
   }
 }
 
+@media screen and (max-width: 490px) {
+  .cardTotal form input[type=text] {
+    display: block;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .cardTotal form input[type=submit] {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+}
+
 @media screen and (max-width: 450px) {
-  .vegetable .right-col .addToCard a {
-    padding: 1rem 1rem;
-    font-size: 1.3rem;
-    margin: 0 1rem;
+  .loding-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+  .loding-area a {
+    background: #f5f5f5;
+    color: #6F6F6F;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    font-family: "Cairo", sans-serif;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    text-decoration: none;
   }
   .list-container {
     display: -webkit-box;
@@ -1534,14 +1562,6 @@ footer .footer-third-col .social-icon a i:hover {
   }
 }
 
-@media screen and (max-width: 380px) {
-  .vegetable .right-col .addToCard a {
-    padding: 1rem .9rem;
-    font-size: 1.3rem;
-    margin: 0 .7rem;
-  }
-}
-
 #overlay {
   position: fixed;
   /* Sit on top of the page content */
@@ -1562,4 +1582,4 @@ footer .footer-third-col .social-icon a i:hover {
   cursor: pointer;
   /* Add a pointer on hover */
 }
-/*# sourceMappingURL=shopdetails.css.map */
+/*# sourceMappingURL=shopingcard.css.map */
