@@ -1,30 +1,24 @@
 $(document).ready(function(){
-  // $('.filterLI').click(function(){
-  //   const value = $(this).attr('data-filter');
-  //   if(value == "Description"){
-  //     $(".Description").show(1000)
-  //   }else{
-  //     $(".Description").hide(1000)
-  //   }
-  //   if(value == "Information"){
-  //     $(".Information").show(1000)
-  //   }else{
-  //     $(".Information").hide(1000)
-  //   }
-  //   if(value == "Reviews"){
-  //     $(".Reviews").show(1000)
-  //   }else{
-  //     $(".Reviews").hide(1000)
-  //   }
+  $(".Description").show("1000");
+  $('.filterLI').click(function(){
+    const value = $(this).attr('data-filter');
+    console.log(value);
+    if(value ==  "Description"){
+      $(".Description").show("1000")
+    }else{
+      $('.filteritem').not('.'+value).hide('2000')
+      $('.filteritem').filter('.'+value).show('2000')
+    }
    
-  // })
+  })
   //active class
   $('.filterLI').click(function(){
     $(this).addClass('active').siblings().removeClass('active')
   })
 });
 
-let list = document.querySelectorAll(".")
+
+
 
 // image  change js
 let bigImg = document.querySelector(".img-show-area img");

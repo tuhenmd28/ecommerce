@@ -1104,6 +1104,7 @@ header .menu .login i {
 }
 
 .description .filterMenu .filterLI {
+  text-decoration: none;
   font-size: 1.8rem;
   font-family: "Cairo", sans-serif;
   color: #6F6F6F;
@@ -1316,6 +1317,12 @@ footer .footer-third-col .social-icon a i:hover {
 }
 
 @media screen and (max-width: 991px) {
+  .alldeparmeant {
+    position: relative;
+  }
+  .alldeparmeant .allitem {
+    position: initial !important;
+  }
   .header-icon {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
