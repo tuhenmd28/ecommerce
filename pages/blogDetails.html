@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Card page</title>
+    <title>Blog Details Page</title>
     <!-- animate.css -->
     <link
     rel="stylesheet"
@@ -22,7 +22,7 @@
     <!-- font awesome css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- coustrom css -->
-    <link rel="stylesheet" href="./assets/css/shopingcard.css">
+    <link rel="stylesheet" href="./assets/css/blogDetails.css">
 </head>
 <body>
     <header class="d-none d-lg-block">
@@ -62,7 +62,7 @@
             <div class="col-lg-6 nav ">
                     <ul>
                         <li><a href="../index.html" >home</a></li>
-                        <li><a href="./../shop.html" class="active">shop</a></li>
+                        <li><a href="../shop.html" >shop</a></li>
                         <li class="pages"><a href="#">pages</a>
                           <ul>
                             <li><a href="./shopDetails.html">Shop Details</a></li>
@@ -71,7 +71,7 @@
                             <li><a href="./blogDetails.html">Blog Details</a></li>
                         </ul>
                         </li>
-                        <li><a href="#">blog</a></li>
+                        <li><a href="#" class="active">blog</a></li>
                         <li><a href="#">contact</a></li>
                     </ul>
                 
@@ -196,10 +196,11 @@
     <div class="container">
         <div class="row">
             <div class="col-12 bgImg">
-                <h1>Shopping Cart
+                <h1>The Moment You Need To Remove Garlic From The Menu
                     </h1>
-                    <a href="./index.html">Home </a>
-                    <span>Shopping Cart</span>
+                    <span>By Michael Scofield</span>
+                     <span>January 14, 2019 </span>
+                      <span>8 Comments</span>
             </div>
         </div>
     </div>
@@ -207,110 +208,165 @@
 
 <!-- page banner section end -->
 
-<!-- product and price area start  -->
-<section class="price">
-    <div class="container">
-        <table>
-            <tbody>
-                <tr>
-                    <th class="Product-left">Product</th>
-                    <th class="text-center">Price</th>
-                    <th class="text-center">Quantity</th>
-                    <th class="text-center">Total</th>
-                    
-                </tr>
-                <tr class="hrline">
-                    <td colspan="5"><hr></td>
-                </tr>
-                <tr>
-                    <td  class="Product-left"><img src="../assets/img/download (1).webp" alt="">
-                        <span>Vegetable's Package</span>
-                    </td>
-                    <th class="text-center">$55.00</th>
-                    <td class="text-center"> 
-                        <div class="add-remove">
-                         <span class="remove1 remove"><i class="fas fa-minus"></i></span>
-                        <span class="display1 count">1</span>
-                        <span class="add1 add"><i class="fas fa-plus"></i></span>
-                        </div>
-                    </td>
-                    <th class="text-center" >$<span class="priceAdd1">55.00</span></th>
-                    <th class="text-center "><i class="fas fa-times"></i></th>
-                </tr>
-                <tr class="hrline">
-                    <td colspan="5"><hr></td>
-                </tr>
-                <tr>
-                    <td  class="Product-left"><img src="../assets/img/download (2).webp" alt="">
-                        <span>Fresh Garden Vegetable</span>
-                    </td>
-                    <th class="text-center">$40.00</th>
-                    <td class="text-center"> 
-                        <div class="add-remove">
-                         <span class="remove2 remove"><i class="fas fa-minus"></i></span>
-                        <span class="display2 count">1</span>
-                        <span class="add2 add"><i class="fas fa-plus"></i></span>
-                        </div>
-                    </td>
-                    <th class="text-center">$<span class="priceAdd2">40.00</span></th>
-                    <th class="text-center "><i class="fas fa-times"></i></th>
-                </tr>
-                <tr class="hrline">
-                    <td colspan="5"><hr></td>
-                </tr>
-                <tr>
-                    <td  class="Product-left"><img src="../assets/img/download (3).webp" alt="">
-                        <span>Organic Bananas</span>
-                    </td>
-                    <th class="text-center">$69.00</th>
-                    <td class="text-center"> 
-                        <div class="add-remove">
-                         <span class="remove3 remove"><i class="fas fa-minus"></i></span>
-                        <span class="display3 count ">1</span>
-                        <span class="add3 add"><i class="fas fa-plus"></i></span>
-                        </div>
-                    </td>
-                    <th class="text-center ">$<span class="priceAdd3">69.00</span></th>
-                    <th class="ml-3 "><i class="fas fa-times"></i></th>
-                </tr>
-                <tr class="hrline">
-                    <td colspan="5"><hr></td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="loding-area">
-            <a href="#">continue shopping </a>
-            <a href="#"><span><i class="fas fa-spinner"></i></span> update card</a>
-        </div>
-    </div>
-</section>
-
-<!-- product and price area end -->
-
-<!-- card total area section start -->
-<section class="cardTotal">
+<section class="searchAndImg">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
-                <h2>Discount Codes</h2>
-                <form action="#">
-                    <input type="text" placeholder="Enter your coupon code">
-                    <input type="submit" value="apply coupon">
-                </form>
+            <div class="col-md-4 mb-5 mb-md-0">
+                <div class="search-input">
+                    <input type="text" placeholder="Search...">
+                    <span><i class="fas fa-search"></i></span>
+                </div>
+                <div class="search-item">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Beauty(20)</a></li>
+                        <li><a href="#">Food(5)</a></li>
+                        <li><a href="#">Life Style(9)</a></li>
+                        <li><a href="#">Travel(10)</a></li>
+                    </ul>
+                </div>
+                <div class="recent-news">
+                    <h3>Recent News</h3>
+                    <a href="#" class="recent-news-item">
+                        <div class="item-img">
+                            <img src="../assets/img/xsr-1.jpg.pagespeed.ic.chNerr_ywP.webp" alt="">
+                        </div>
+                        <div class="item-txt">
+                            <h5>09 kinds of vegetables protact the liver </h5>
+                            <p> may 5 ,2021</p>
+                        </div>
+                        
+                    </a>
+                    <a href="#" class="recent-news-item">
+                        <div class="item-img">
+                            <img src="../assets/img/xsr-2.jpg.pagespeed.ic.NSkfePc_bi.webp" alt="">
+                        </div>
+                        <div class="item-txt">
+                            <h5>09 kinds of vegetables protact the liver </h5>
+                            <p> may 5 ,2021</p>
+                        </div>
+                        
+                    </a>
+                    <a href="#" class="recent-news-item">
+                        <div class="item-img">
+                            <img src="../assets/img/xsr-3.jpg.pagespeed.ic.IUyecbWYrU.webp" alt="">
+                        </div>
+                        <div class="item-txt">
+                            <h5>09 kinds of vegetables protact the liver </h5>
+                            <p> may 5 ,2021</p>
+                        </div>
+                        
+                    </a>
+                    <a href="#" class="recent-news-item"></a>
+                    <a href="#" class="recent-news-item"></a>
+                </div>
+                <h3>Search By</h3>
+                <div class="search-by">
+                    <a href="#">Apple</a>
+                    <a href="#">Beauty</a>
+                    <a href="#">vegetables</a>
+                    <a href="#">Fuits</a>
+                    <a href="#">Healthy Food </a>
+                    <a href="#">Lifestyle</a>
+                </div>
             </div>
-            <div class="col-lg-6 right-total">
-                <h3>Cart Total</h3>
-                <ul>
-                    <li>Subtotal <span>$540</span></li>
-                    <li>total <span>$540</span></li>
-                </ul>
-                <a href="#">proceed to checkout</a>
+            <div class="col-md-8 img-area">
+                <img class="w-100" src="../assets/img/xdetails-pic.jpg.pagespeed.ic.iXGi5L-xRP.webp" alt="">
+                <p>Sed porttitor lectus nibh. Vestibulum ac 
+                    diam sit amet quam vehicula elementum sed 
+                    sit amet dui. Curabitur non nulla sit amet
+                     nisl tempus convallis quis ac lectus. 
+                     Mauris blandit aliquet elit, eget 
+                     tincidunt nibh pulvinar a. Vivamus magna 
+                     justo, lacinia eget consectetur sed, 
+                     convallis at tellus. Sed porttitor lectus 
+                     nibh. Donec sollicitudin molestie malesuada.
+                      Curabitur non nulla sit amet nisl tempus
+                       convallis quis ac lectus. Proin eget 
+                       tortor risus. Donec rutrum congue leo 
+                       eget malesuada. Curabitur non nulla sit 
+                       amet nisl tempus convallis quis ac lectus.
+                        Donec sollicitudin molestie malesuada.
+                         Nulla quis lorem ut libero malesuada 
+                         feugiat. Curabitur arcu erat, accumsan
+                          id imperdiet et, porttitor at sem.</p>
+                          <h2>The corner window forms a place within a place that is a 
+                              resting point within the large space.</h2>
+                              <p>The study area is located at the back with a view of the vast
+                                   nature. Together with the other buildings, a congruent story
+                                    has been managed in which the whole has a reinforcing
+                                     effect on the components. The use of materials seeks
+                                      connection to the main house, the adjacent stables
+
+                              </p>
+                              <div class="row ">
+                                  <div class="col-sm-6 mb-5 mb-sm-0">
+                                      <div class="profilePic ">
+                                          <img  src="../assets/img/xdetails-author.jpg.pagespeed.ic.PvwPsmLHih.webp" alt="">
+                                          <h3>Michael Scofield <br>
+                                            <span>Admin</span></h3>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-6 profile-icon">
+                                      <h4>Categories: <span>Food</span></h4>
+                                      <h4>Tags: <span> All, Trending, Cooking, Healthy Food, Life Style</span></h4>
+                                      <div class="icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                        <i class="fab fa-twitter"></i>
+                                        <i class="fab fa-google-plus-g"></i>
+                                        <i class="fab fa-linkedin-in"></i>
+                                        <i class="far fa-envelope"></i>
+                                      </div>
+                                  </div>
+                              </div>
             </div>
         </div>
+        <hr>
     </div>
 </section>
 
-<!-- card total area section end -->
+
+<!-- from the blog section start -->
+
+<section class="from-the-blog">
+    <div class="container">
+      <div class="row justify-content-center">
+        <h1 class="text-center">form the blog</h1>
+      </div>
+      <div class="row ">
+  
+        <div class="col-md-4 fistc">
+          <img src="../assets/img/xblog-1.jpg.pagespeed.ic.b6c8D8etPg.webp" alt="">
+          <div class="imgtxt">
+            <h4><i class="far fa-calendar"></i>  may 4,2019   <span>  <i class="far fa-comment"></i> 5</span></h4>
+            <h2>Cooking tips make cooking simple</h2>
+            <p>Sed quia non numquam modi tempora indunt 
+              ut labore et dolore magnam aliquam quaerat</p>
+          </div>
+        </div>
+        <div class="col-md-4 secondc">
+          <img src="../assets/img/xblog-2.jpg.pagespeed.ic.Wv9OXwE7iA.webp" alt="">
+          <div class="imgtxt">
+            <h4><i class="far fa-calendar"></i>  may 4,2019   <span>  <i class="far fa-comment"></i> 5</span></h4>
+            <h2>Cooking tips make cooking simple</h2>
+            <p>Sed quia non numquam modi tempora indunt 
+              ut labore et dolore magnam aliquam quaerat</p>
+          </div>
+        </div>
+        <div class="col-md-4 thardc">
+          <img src="../assets/img/xblog-3.jpg.pagespeed.ic.ruf-U0Iaxk.webp" alt="">
+          <div class="imgtxt">
+            <h4><i class="far fa-calendar"></i>  may 4,2019   <span>  <i class="far fa-comment"></i> 5</span></h4>
+            <h2>Cooking tips make cooking simple</h2>
+            <p>Sed quia non numquam modi tempora indunt 
+              ut labore et dolore magnam aliquam quaerat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- from the blog section end -->
 
 <!-- footer area start -->
 <footer>
@@ -378,8 +434,8 @@
 <!-- slick slider -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
  <!-- main javascript -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
- <script src="./assets/js/shopingCard.js"></script>
+ <script src="assets/js/checkout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
 
